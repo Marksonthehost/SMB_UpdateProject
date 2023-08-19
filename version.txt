@@ -1,5 +1,5 @@
 3.0
-https://files.gamebanana.com/mods/smbieaemgpp_30_windowsruntime_32bit.7z
-https://files.gamebanana.com/mods/smbieaemgpp_30_windowsruntime_64bit.7z
-c7a16ea3491c7b7be639a7a6346811b2
-f62c49331f6b88c373f107bbd55ad90f
+https://files.gamebanana.com/mods/smbieaemg_30_windowsruntime_x86.7z
+https://files.gamebanana.com/mods/smbieaemg_30_windowsruntime_x86_64.7z
+fc6e3bd2b73d3a71cf6207de2d64f87b
+a9822362396b817485edf832b6630d40
