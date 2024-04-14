@@ -1,0 +1,743 @@
+[1/24] Automatic MOC and UIC for target gtest_main
+[2/24] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.obj
+[3/24] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
+[4/24] Linking CXX static library lib\libgtest_main.a
+[5/24] Building CXX object libsvoxeas/CMakeFiles/mp_svoxeas.dir/filewrapper.cpp.obj
+FAILED: libsvoxeas/CMakeFiles/mp_svoxeas.dir/filewrapper.cpp.obj 
+D:\msys64\mingw64\bin\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUNICODE -DVERSION=2.1.0 -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -Dmp_svoxeas_EXPORTS -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas/mp_svoxeas_autogen/include -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/sonivox/libsonivox -isystem D:/msys64/mingw64/include/qt6/QtCore -isystem D:/msys64/mingw64/include/qt6 -isystem D:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/msys64/mingw64/include/qt6/QtMultimedia -isystem D:/msys64/mingw64/include/qt6/QtGui -isystem D:/msys64/mingw64/include/qt6/QtNetwork -isystem D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/drumstick-git/library/include -std=gnu++17 -MD -MT libsvoxeas/CMakeFiles/mp_svoxeas.dir/filewrapper.cpp.obj -MF libsvoxeas\CMakeFiles\mp_svoxeas.dir\filewrapper.cpp.obj.d -o libsvoxeas/CMakeFiles/mp_svoxeas.dir/filewrapper.cpp.obj -c D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp
+In file included from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.h:24,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:20:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox/eas_types.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_types.h
+      | ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: In function 'int readAt(void*, void*, int, int)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:24:24: error: 'FileWrapper' does not name a type
+   24 |     return static_cast<FileWrapper*>(handle)->readAt(buffer, pos, size);
+      |                        ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:24:35: error: expected '>' before '*' token
+   24 |     return static_cast<FileWrapper*>(handle)->readAt(buffer, pos, size);
+      |                                   ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:24:35: error: expected '(' before '*' token
+   24 |     return static_cast<FileWrapper*>(handle)->readAt(buffer, pos, size);
+      |                                   ^
+      |                                   (
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:24:36: error: expected primary-expression before '>' token
+   24 |     return static_cast<FileWrapper*>(handle)->readAt(buffer, pos, size);
+      |                                    ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:24:37: error: 'void*' is not a pointer-to-object type
+   24 |     return static_cast<FileWrapper*>(handle)->readAt(buffer, pos, size);
+      |                                     ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:24:72: error: expected ')' before ';' token
+   24 |     return static_cast<FileWrapper*>(handle)->readAt(buffer, pos, size);
+      |                                                                        ^
+      |                                                                        )
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: In function 'int size(void*)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:29:24: error: 'FileWrapper' does not name a type
+   29 |     return static_cast<FileWrapper*>(handle)->size();
+      |                        ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:29:35: error: expected '>' before '*' token
+   29 |     return static_cast<FileWrapper*>(handle)->size();
+      |                                   ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:29:35: error: expected '(' before '*' token
+   29 |     return static_cast<FileWrapper*>(handle)->size();
+      |                                   ^
+      |                                   (
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:29:36: error: expected primary-expression before '>' token
+   29 |     return static_cast<FileWrapper*>(handle)->size();
+      |                                    ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:29:37: error: 'void*' is not a pointer-to-object type
+   29 |     return static_cast<FileWrapper*>(handle)->size();
+      |                                     ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:29:53: error: expected ')' before ';' token
+   29 |     return static_cast<FileWrapper*>(handle)->size();
+      |                                                     ^
+      |                                                     )
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: At global scope:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:32:1: error: 'FileWrapper' does not name a type
+   32 | FileWrapper::FileWrapper(const QString &path)
+      | ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:34:5: error: expected unqualified-id before ',' token
+   34 |     , m_Base{0}
+      |     ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:34:13: error: expected constructor, destructor, or type conversion before '{' token
+   34 |     , m_Base{0}
+      |             ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:35:5: error: expected unqualified-id before ',' token
+   35 |     , m_Length{0}
+      |     ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:35:15: error: expected constructor, destructor, or type conversion before '{' token
+   35 |     , m_Length{0}
+      |               ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:36:5: error: expected unqualified-id before ',' token
+   36 |     , m_easFile{}
+      |     ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:36:16: error: expected constructor, destructor, or type conversion before '{' token
+   36 |     , m_easFile{}
+      |                ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:37:1: error: expected unqualified-id before '{' token
+   37 | {
+      | ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:50:1: error: 'FileWrapper' does not name a type
+   50 | FileWrapper::FileWrapper(const char *path)
+      | ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:56:1: error: 'FileWrapper' does not name a type
+   56 | FileWrapper::~FileWrapper() {
+      | ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:62:1: error: 'FileWrapper' has not been declared
+   62 | FileWrapper::readAt(void *buffer, int offset, int size) {
+      | ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: In function 'int readAt(void*, int, int)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:64:5: error: 'm_file' was not declared in this scope; did you mean 'tmpfile'?
+   64 |     m_file.seek(offset);
+      |     ^~~~~~
+      |     tmpfile
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:65:25: error: 'm_Length' was not declared in this scope
+   65 |     if (offset + size > m_Length) {
+      |                         ^~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: At global scope:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:72:1: error: 'FileWrapper' has not been declared
+   72 | FileWrapper::size() {
+      | ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: In function 'int size()':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:74:12: error: 'm_Length' was not declared in this scope
+   74 |     return m_Length;
+      |            ^~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: At global scope:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:77:6: error: 'FileWrapper' has not been declared
+   77 | bool FileWrapper::ok() const
+      |      ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:77:24: error: non-member function 'bool ok()' cannot have cv-qualifier
+   77 | bool FileWrapper::ok() const
+      |                        ^~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: In function 'bool ok()':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:79:12: error: 'm_ok' was not declared in this scope; did you mean 'ok'?
+   79 |     return m_ok;
+      |            ^~~~
+      |            ok
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp: At global scope:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.cpp:82:1: error: 'EAS_FILE_LOCATOR' does not name a type
+   82 | EAS_FILE_LOCATOR
+      | ^~~~~~~~~~~~~~~~
+[6/24] Automatic MOC and UIC for target SonivoxTest
+[7/24] Building CXX object libsvoxeas/CMakeFiles/mp_svoxeas.dir/mp_svoxeas_autogen/mocs_compilation.cpp.obj
+FAILED: libsvoxeas/CMakeFiles/mp_svoxeas.dir/mp_svoxeas_autogen/mocs_compilation.cpp.obj 
+D:\msys64\mingw64\bin\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUNICODE -DVERSION=2.1.0 -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -Dmp_svoxeas_EXPORTS -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas/mp_svoxeas_autogen/include -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/sonivox/libsonivox -isystem D:/msys64/mingw64/include/qt6/QtCore -isystem D:/msys64/mingw64/include/qt6 -isystem D:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/msys64/mingw64/include/qt6/QtMultimedia -isystem D:/msys64/mingw64/include/qt6/QtGui -isystem D:/msys64/mingw64/include/qt6/QtNetwork -isystem D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/drumstick-git/library/include -std=gnu++17 -MD -MT libsvoxeas/CMakeFiles/mp_svoxeas.dir/mp_svoxeas_autogen/mocs_compilation.cpp.obj -MF libsvoxeas\CMakeFiles\mp_svoxeas.dir\mp_svoxeas_autogen\mocs_compilation.cpp.obj.d -o libsvoxeas/CMakeFiles/mp_svoxeas.dir/mp_svoxeas_autogen/mocs_compilation.cpp.obj -c D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas/mp_svoxeas_autogen/mocs_compilation.cpp
+In file included from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/sonivox/libsonivox/eas.h:38,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:30,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthcontroller.h:32,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas/mp_svoxeas_autogen/EWIEGA46WW/moc_synthcontroller.cpp:9,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas/mp_svoxeas_autogen/mocs_compilation.cpp:3:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox/eas_types.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_types.h
+      | ^
+In file included from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.h:24,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:31:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox/eas_types.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_types.h
+      | ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:110:5: error: 'EAS_DATA_HANDLE' does not name a type
+  110 |     EAS_DATA_HANDLE m_easData;
+      |     ^~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:111:5: error: 'EAS_HANDLE' does not name a type
+  111 |     EAS_HANDLE m_streamHandle;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:112:5: error: 'EAS_HANDLE' does not name a type
+  112 |     EAS_HANDLE m_fileHandle;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:113:5: error: 'FileWrapper' does not name a type
+  113 |     FileWrapper *m_currentFile;
+      |     ^~~~~~~~~~~
+[8/24] Building CXX object libsvoxeas/CMakeFiles/mp_svoxeas.dir/synthcontroller.cpp.obj
+FAILED: libsvoxeas/CMakeFiles/mp_svoxeas.dir/synthcontroller.cpp.obj 
+D:\msys64\mingw64\bin\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUNICODE -DVERSION=2.1.0 -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -Dmp_svoxeas_EXPORTS -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas/mp_svoxeas_autogen/include -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/sonivox/libsonivox -isystem D:/msys64/mingw64/include/qt6/QtCore -isystem D:/msys64/mingw64/include/qt6 -isystem D:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/msys64/mingw64/include/qt6/QtMultimedia -isystem D:/msys64/mingw64/include/qt6/QtGui -isystem D:/msys64/mingw64/include/qt6/QtNetwork -isystem D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/drumstick-git/library/include -std=gnu++17 -MD -MT libsvoxeas/CMakeFiles/mp_svoxeas.dir/synthcontroller.cpp.obj -MF libsvoxeas\CMakeFiles\mp_svoxeas.dir\synthcontroller.cpp.obj.d -o libsvoxeas/CMakeFiles/mp_svoxeas.dir/synthcontroller.cpp.obj -c D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthcontroller.cpp
+In file included from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/sonivox/libsonivox/eas.h:38,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:30,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthcontroller.h:32,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthcontroller.cpp:20:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox/eas_types.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_types.h
+      | ^
+In file included from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.h:24,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:31:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox/eas_types.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_types.h
+      | ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:110:5: error: 'EAS_DATA_HANDLE' does not name a type
+  110 |     EAS_DATA_HANDLE m_easData;
+      |     ^~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:111:5: error: 'EAS_HANDLE' does not name a type
+  111 |     EAS_HANDLE m_streamHandle;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:112:5: error: 'EAS_HANDLE' does not name a type
+  112 |     EAS_HANDLE m_fileHandle;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:113:5: error: 'FileWrapper' does not name a type
+  113 |     FileWrapper *m_currentFile;
+      |     ^~~~~~~~~~~
+[9/24] Building CXX object libsvoxeas/CMakeFiles/mp_svoxeas.dir/synthrenderer.cpp.obj
+FAILED: libsvoxeas/CMakeFiles/mp_svoxeas.dir/synthrenderer.cpp.obj 
+D:\msys64\mingw64\bin\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DUNICODE -DVERSION=2.1.0 -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -Dmp_svoxeas_EXPORTS -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/libsvoxeas/mp_svoxeas_autogen/include -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox -ID:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/sonivox/libsonivox -isystem D:/msys64/mingw64/include/qt6/QtCore -isystem D:/msys64/mingw64/include/qt6 -isystem D:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/msys64/mingw64/include/qt6/QtMultimedia -isystem D:/msys64/mingw64/include/qt6/QtGui -isystem D:/msys64/mingw64/include/qt6/QtNetwork -isystem D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/drumstick-git/library/include -std=gnu++17 -MD -MT libsvoxeas/CMakeFiles/mp_svoxeas.dir/synthrenderer.cpp.obj -MF libsvoxeas\CMakeFiles\mp_svoxeas.dir\synthrenderer.cpp.obj.d -o libsvoxeas/CMakeFiles/mp_svoxeas.dir/synthrenderer.cpp.obj -c D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp
+In file included from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:25:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox/eas_reverb.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_reverb.h
+      | ^
+In file included from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/build/sonivox/libsonivox/eas.h:38,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:30,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:30:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox/eas_types.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_types.h
+      | ^
+In file included from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/filewrapper.h:24,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:31:
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/sonivox/arm-wt-22k/include/libsonivox/eas_types.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_types.h
+      | ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:110:5: error: 'EAS_DATA_HANDLE' does not name a type
+  110 |     EAS_DATA_HANDLE m_easData;
+      |     ^~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:111:5: error: 'EAS_HANDLE' does not name a type
+  111 |     EAS_HANDLE m_streamHandle;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:112:5: error: 'EAS_HANDLE' does not name a type
+  112 |     EAS_HANDLE m_fileHandle;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.h:113:5: error: 'FileWrapper' does not name a type
+  113 |     FileWrapper *m_currentFile;
+      |     ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In constructor 'SynthRenderer::SynthRenderer(QObject*)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:39:5: error: class 'SynthRenderer' does not have any field named 'm_currentFile'
+   39 |     m_currentFile(nullptr),
+      |     ^~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::initEAS()':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:64:5: error: 'EAS_RESULT' was not declared in this scope
+   64 |     EAS_RESULT eas_res;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:65:5: error: 'EAS_DATA_HANDLE' was not declared in this scope
+   65 |     EAS_DATA_HANDLE dataHandle;
+      |     ^~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:66:5: error: 'EAS_HANDLE' was not declared in this scope
+   66 |     EAS_HANDLE handle;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:68:11: error: 'S_EAS_LIB_CONFIG' does not name a type
+   68 |     const S_EAS_LIB_CONFIG *easConfig = EAS_Config();
+      |           ^~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:69:9: error: 'easConfig' was not declared in this scope
+   69 |     if (easConfig == 0) {
+      |         ^~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:74:5: error: 'eas_res' was not declared in this scope
+   74 |     eas_res = EAS_Init(&dataHandle);
+      |     ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:74:25: error: 'dataHandle' was not declared in this scope
+   74 |     eas_res = EAS_Init(&dataHandle);
+      |                         ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:74:15: error: 'EAS_Init' was not declared in this scope
+   74 |     eas_res = EAS_Init(&dataHandle);
+      |               ^~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:75:20: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+   75 |     if (eas_res != EAS_SUCCESS) {
+      |                    ^~~~~~~~~~~
+      |                    EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:81:7: error: 'FileWrapper' was not declared in this scope
+   81 |       FileWrapper dlsFile(m_dlsFile);
+      |       ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:82:11: error: 'dlsFile' was not declared in this scope; did you mean 'm_dlsFile'?
+   82 |       if (dlsFile.ok()) {
+      |           ^~~~~~~
+      |           m_dlsFile
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:83:21: error: 'EAS_LoadDLSCollection' was not declared in this scope
+   83 |           eas_res = EAS_LoadDLSCollection(dataHandle, nullptr, dlsFile.getLocator());
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:84:26: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+   84 |           if (eas_res != EAS_SUCCESS) {
+      |                          ^~~~~~~~~~~
+      |                          EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:92:47: error: 'handle' was not declared in this scope
+   92 |     eas_res = EAS_OpenMIDIStream(dataHandle, &handle, NULL);
+      |                                               ^~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:92:15: error: 'EAS_OpenMIDIStream' was not declared in this scope
+   92 |     eas_res = EAS_OpenMIDIStream(dataHandle, &handle, NULL);
+      |               ^~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:93:20: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+   93 |     if (eas_res != EAS_SUCCESS) {
+      |                    ^~~~~~~~~~~
+      |                    EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:95:7: error: 'EAS_Shutdown' was not declared in this scope
+   95 |       EAS_Shutdown(dataHandle);
+      |       ^~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:99:5: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+   99 |     m_easData = dataHandle;
+      |     ^~~~~~~~~
+      |     readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:100:5: error: 'm_streamHandle' was not declared in this scope
+  100 |     m_streamHandle = handle;
+      |     ^~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:102:20: error: 'easConfig' was not declared in this scope
+  102 |     m_sampleRate = easConfig->sampleRate;
+      |                    ^~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:105:40: error: 'EAS_PCM' was not declared in this scope
+  105 |     m_sample_size = CHAR_BIT * sizeof (EAS_PCM);
+      |                                        ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::uninitEAS()':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:122:5: error: 'EAS_RESULT' was not declared in this scope
+  122 |     EAS_RESULT eas_res;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:123:9: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  123 |     if (m_easData != 0 && m_streamHandle != 0) {
+      |         ^~~~~~~~~
+      |         readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:123:27: error: 'm_streamHandle' was not declared in this scope
+  123 |     if (m_easData != 0 && m_streamHandle != 0) {
+      |                           ^~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:124:7: error: 'eas_res' was not declared in this scope
+  124 |       eas_res = EAS_CloseMIDIStream(m_easData, m_streamHandle);
+      |       ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:124:17: error: 'EAS_CloseMIDIStream' was not declared in this scope
+  124 |       eas_res = EAS_CloseMIDIStream(m_easData, m_streamHandle);
+      |                 ^~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:125:22: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  125 |       if (eas_res != EAS_SUCCESS) {
+      |                      ^~~~~~~~~~~
+      |                      EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:128:17: error: 'EAS_Shutdown' was not declared in this scope
+  128 |       eas_res = EAS_Shutdown(m_easData);
+      |                 ^~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:129:22: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  129 |       if (eas_res != EAS_SUCCESS) {
+      |                      ^~~~~~~~~~~
+      |                      EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'virtual qint64 SynthRenderer::readData(char*, qint64)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:147:5: error: 'EAS_RESULT' was not declared in this scope
+  147 |     EAS_RESULT eas_res;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:148:5: error: 'EAS_I32' was not declared in this scope
+  148 |     EAS_I32 numGen = 0;
+      |     ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:151:55: error: 'EAS_PCM' was not declared in this scope
+  151 |     const qint64 bufferBytes = bufferSamples * sizeof(EAS_PCM);
+      |                                                       ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:161:14: error: 'buffer' was not declared in this scope; did you mean 'buflen'?
+  161 |     EAS_PCM *buffer = reinterpret_cast<EAS_PCM *>(data);
+      |              ^~~~~~
+      |              buflen
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:161:40: error: 'EAS_PCM' does not name a type
+  161 |     EAS_PCM *buffer = reinterpret_cast<EAS_PCM *>(data);
+      |                                        ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:161:48: error: expected '>' before '*' token
+  161 |     EAS_PCM *buffer = reinterpret_cast<EAS_PCM *>(data);
+      |                                                ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:161:48: error: expected '(' before '*' token
+  161 |     EAS_PCM *buffer = reinterpret_cast<EAS_PCM *>(data);
+      |                                                ^
+      |                                                (
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:161:49: error: expected primary-expression before '>' token
+  161 |     EAS_PCM *buffer = reinterpret_cast<EAS_PCM *>(data);
+      |                                                 ^
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:161:56: error: expected ')' before ';' token
+  161 |     EAS_PCM *buffer = reinterpret_cast<EAS_PCM *>(data);
+      |                                                        ^
+      |                                                        )
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:163:9: error: 'eas_res' was not declared in this scope
+  163 |         eas_res = EAS_Render(m_easData, buffer, m_renderFrames, &numGen);
+      |         ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:163:30: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  163 |         eas_res = EAS_Render(m_easData, buffer, m_renderFrames, &numGen);
+      |                              ^~~~~~~~~
+      |                              readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:163:66: error: 'numGen' was not declared in this scope
+  163 |         eas_res = EAS_Render(m_easData, buffer, m_renderFrames, &numGen);
+      |                                                                  ^~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:163:19: error: 'EAS_Render' was not declared in this scope
+  163 |         eas_res = EAS_Render(m_easData, buffer, m_renderFrames, &numGen);
+      |                   ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:164:24: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  164 |         if (eas_res != EAS_SUCCESS) {
+      |                        ^~~~~~~~~~~
+      |                        EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::writeMIDIData(QByteArray&)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:399:5: error: 'EAS_RESULT' was not declared in this scope
+  399 |     EAS_RESULT eas_res = EAS_ERROR_ALREADY_STOPPED;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:400:5: error: 'EAS_I32' was not declared in this scope
+  400 |     EAS_I32 count = ev.size();
+      |     ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:401:5: error: 'EAS_U8' was not declared in this scope
+  401 |     EAS_U8 buffer[count];
+      |     ^~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:403:9: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  403 |     if (m_easData != 0 && m_streamHandle != 0 && !ev.isEmpty())
+      |         ^~~~~~~~~
+      |         readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:403:27: error: 'm_streamHandle' was not declared in this scope
+  403 |     if (m_easData != 0 && m_streamHandle != 0 && !ev.isEmpty())
+      |                           ^~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:405:18: error: 'buffer' was not declared in this scope
+  405 |         ::memcpy(buffer, ev.data(), ev.size());
+      |                  ^~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:406:13: error: 'count' was not declared in this scope
+  406 |         if (count > 0) {
+      |             ^~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:406:13: note: suggested alternatives:
+In file included from D:/msys64/mingw64/include/c++/13.2.0/algorithm:73,
+                 from D:/msys64/mingw64/include/qt6/QtCore/qcontainertools_impl.h:22,
+                 from D:/msys64/mingw64/include/qt6/QtCore/qarraydataops.h:9,
+                 from D:/msys64/mingw64/include/qt6/QtCore/qarraydatapointer.h:7,
+                 from D:/msys64/mingw64/include/qt6/QtCore/qbytearray.h:11,
+                 from D:/msys64/mingw64/include/qt6/QtCore/qstringview.h:8,
+                 from D:/msys64/mingw64/include/qt6/QtCore/qchar.h:656,
+                 from D:/msys64/mingw64/include/qt6/QtCore/qstring.h:14,
+                 from D:/msys64/mingw64/include/qt6/QtCore/qobject.h:11,
+                 from D:/msys64/mingw64/include/qt6/QtCore/QObject:1,
+                 from D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:19:
+D:/msys64/mingw64/include/c++/13.2.0/pstl/glue_algorithm_defs.h:101:1: note:   'std::count'
+  101 | count(_ExecutionPolicy&& __exec, _ForwardIterator __first, _ForwardIterator __last, const _Tp& __value);
+      | ^~~~~
+In file included from D:/msys64/mingw64/include/qt6/QtCore/qstringview.h:10:
+D:/msys64/mingw64/include/qt6/QtCore/qstringalgorithms.h:110:39: note:   'QtPrivate::count'
+  110 | [[nodiscard]] Q_CORE_EXPORT qsizetype count(QStringView haystack, const QRegularExpression &re);
+      |                                       ^~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:408:13: error: 'eas_res' was not declared in this scope
+  408 |             eas_res = EAS_WriteMIDIStream(m_easData, m_streamHandle, buffer, count);
+      |             ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:408:23: error: 'EAS_WriteMIDIStream' was not declared in this scope
+  408 |             eas_res = EAS_WriteMIDIStream(m_easData, m_streamHandle, buffer, count);
+      |                       ^~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:409:28: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  409 |             if (eas_res != EAS_SUCCESS) {
+      |                            ^~~~~~~~~~~
+      |                            EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::initReverb(int)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:420:5: error: 'EAS_RESULT' was not declared in this scope
+  420 |     EAS_RESULT eas_res;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:421:5: error: 'EAS_BOOL' was not declared in this scope
+  421 |     EAS_BOOL sw = EAS_TRUE;
+      |     ^~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:422:25: error: 'EAS_PARAM_REVERB_LARGE_HALL' was not declared in this scope
+  422 |     if ( reverb_type >= EAS_PARAM_REVERB_LARGE_HALL && reverb_type <= EAS_PARAM_REVERB_ROOM ) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:422:71: error: 'EAS_PARAM_REVERB_ROOM' was not declared in this scope
+  422 |     if ( reverb_type >= EAS_PARAM_REVERB_LARGE_HALL && reverb_type <= EAS_PARAM_REVERB_ROOM ) {
+      |                                                                       ^~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:423:9: error: 'sw' was not declared in this scope
+  423 |         sw = EAS_FALSE;
+      |         ^~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:423:14: error: 'EAS_FALSE' was not declared in this scope
+  423 |         sw = EAS_FALSE;
+      |              ^~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:424:9: error: 'eas_res' was not declared in this scope
+  424 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_PRESET, (EAS_I32) reverb_type);
+      |         ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:424:36: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  424 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_PRESET, (EAS_I32) reverb_type);
+      |                                    ^~~~~~~~~
+      |                                    readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:424:47: error: 'EAS_MODULE_REVERB' was not declared in this scope
+  424 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_PRESET, (EAS_I32) reverb_type);
+      |                                               ^~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:424:66: error: 'EAS_PARAM_REVERB_PRESET' was not declared in this scope
+  424 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_PRESET, (EAS_I32) reverb_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:424:92: error: 'EAS_I32' was not declared in this scope
+  424 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_PRESET, (EAS_I32) reverb_type);
+      |                                                                                            ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:424:19: error: 'EAS_SetParameter' was not declared in this scope
+  424 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_PRESET, (EAS_I32) reverb_type);
+      |                   ^~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:425:24: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  425 |         if (eas_res != EAS_SUCCESS) {
+      |                        ^~~~~~~~~~~
+      |                        EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:429:5: error: 'eas_res' was not declared in this scope
+  429 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, sw);
+      |     ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:429:32: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  429 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, sw);
+      |                                ^~~~~~~~~
+      |                                readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:429:43: error: 'EAS_MODULE_REVERB' was not declared in this scope
+  429 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, sw);
+      |                                           ^~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:429:62: error: 'EAS_PARAM_REVERB_BYPASS' was not declared in this scope
+  429 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, sw);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:429:87: error: 'sw' was not declared in this scope
+  429 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, sw);
+      |                                                                                       ^~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:429:15: error: 'EAS_SetParameter' was not declared in this scope
+  429 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, sw);
+      |               ^~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:430:20: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  430 |     if (eas_res != EAS_SUCCESS) {
+      |                    ^~~~~~~~~~~
+      |                    EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::initChorus(int)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:439:5: error: 'EAS_RESULT' was not declared in this scope
+  439 |     EAS_RESULT eas_res;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:440:5: error: 'EAS_BOOL' was not declared in this scope
+  440 |     EAS_BOOL sw = EAS_TRUE;
+      |     ^~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:441:24: error: 'EAS_PARAM_CHORUS_PRESET1' was not declared in this scope
+  441 |     if (chorus_type >= EAS_PARAM_CHORUS_PRESET1 && chorus_type <= EAS_PARAM_CHORUS_PRESET4 ) {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:441:67: error: 'EAS_PARAM_CHORUS_PRESET4' was not declared in this scope
+  441 |     if (chorus_type >= EAS_PARAM_CHORUS_PRESET1 && chorus_type <= EAS_PARAM_CHORUS_PRESET4 ) {
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:442:9: error: 'sw' was not declared in this scope
+  442 |         sw = EAS_FALSE;
+      |         ^~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:442:14: error: 'EAS_FALSE' was not declared in this scope
+  442 |         sw = EAS_FALSE;
+      |              ^~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:443:9: error: 'eas_res' was not declared in this scope
+  443 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_PRESET, (EAS_I32) chorus_type);
+      |         ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:443:36: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  443 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_PRESET, (EAS_I32) chorus_type);
+      |                                    ^~~~~~~~~
+      |                                    readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:443:47: error: 'EAS_MODULE_CHORUS' was not declared in this scope
+  443 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_PRESET, (EAS_I32) chorus_type);
+      |                                               ^~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:443:66: error: 'EAS_PARAM_CHORUS_PRESET' was not declared in this scope
+  443 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_PRESET, (EAS_I32) chorus_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:443:92: error: 'EAS_I32' was not declared in this scope
+  443 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_PRESET, (EAS_I32) chorus_type);
+      |                                                                                            ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:443:19: error: 'EAS_SetParameter' was not declared in this scope
+  443 |         eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_PRESET, (EAS_I32) chorus_type);
+      |                   ^~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:444:24: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  444 |         if (eas_res != EAS_SUCCESS) {
+      |                        ^~~~~~~~~~~
+      |                        EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:448:5: error: 'eas_res' was not declared in this scope
+  448 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_BYPASS, sw);
+      |     ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:448:32: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  448 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_BYPASS, sw);
+      |                                ^~~~~~~~~
+      |                                readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:448:43: error: 'EAS_MODULE_CHORUS' was not declared in this scope
+  448 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_BYPASS, sw);
+      |                                           ^~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:448:62: error: 'EAS_PARAM_CHORUS_BYPASS' was not declared in this scope
+  448 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_BYPASS, sw);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:448:87: error: 'sw' was not declared in this scope
+  448 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_BYPASS, sw);
+      |                                                                                       ^~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:448:15: error: 'EAS_SetParameter' was not declared in this scope
+  448 |     eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_BYPASS, sw);
+      |               ^~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:449:20: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  449 |     if (eas_res != EAS_SUCCESS) {
+      |                    ^~~~~~~~~~~
+      |                    EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::setReverbWet(int)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:458:5: error: 'EAS_RESULT' was not declared in this scope
+  458 |     EAS_RESULT eas_res = EAS_SetParameter(m_easData, EAS_MODULE_REVERB, EAS_PARAM_REVERB_WET, (EAS_I32) amount);
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:459:9: error: 'eas_res' was not declared in this scope
+  459 |     if (eas_res != EAS_SUCCESS) {
+      |         ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:459:20: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  459 |     if (eas_res != EAS_SUCCESS) {
+      |                    ^~~~~~~~~~~
+      |                    EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::setChorusLevel(int)':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:468:5: error: 'EAS_RESULT' was not declared in this scope
+  468 |     EAS_RESULT eas_res = EAS_SetParameter(m_easData, EAS_MODULE_CHORUS, EAS_PARAM_CHORUS_LEVEL, (EAS_I32) amount);
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:469:9: error: 'eas_res' was not declared in this scope
+  469 |     if (eas_res != EAS_SUCCESS) {
+      |         ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:469:20: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  469 |     if (eas_res != EAS_SUCCESS) {
+      |                    ^~~~~~~~~~~
+      |                    EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::preparePlayback()':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:493:5: error: 'EAS_HANDLE' was not declared in this scope
+  493 |     EAS_HANDLE handle;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:494:5: error: 'EAS_RESULT' was not declared in this scope
+  494 |     EAS_RESULT result;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:495:5: error: 'EAS_I32' was not declared in this scope
+  495 |     EAS_I32 playTime;
+      |     ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:498:9: error: 'm_currentFile' was not declared in this scope
+  498 |         m_currentFile = new FileWrapper(m_files.first());
+      |         ^~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:498:29: error: expected type-specifier before 'FileWrapper'
+  498 |         m_currentFile = new FileWrapper(m_files.first());
+      |                             ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:501:14: error: 'result' was not declared in this scope; did you mean 'reset'?
+  501 |         if ((result = EAS_OpenFile(m_easData, m_currentFile->getLocator(), &handle)) != EAS_SUCCESS)
+      |              ^~~~~~
+      |              reset
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:501:36: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  501 |         if ((result = EAS_OpenFile(m_easData, m_currentFile->getLocator(), &handle)) != EAS_SUCCESS)
+      |                                    ^~~~~~~~~
+      |                                    readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:501:77: error: 'handle' was not declared in this scope
+  501 |         if ((result = EAS_OpenFile(m_easData, m_currentFile->getLocator(), &handle)) != EAS_SUCCESS)
+      |                                                                             ^~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:501:23: error: 'EAS_OpenFile' was not declared in this scope
+  501 |         if ((result = EAS_OpenFile(m_easData, m_currentFile->getLocator(), &handle)) != EAS_SUCCESS)
+      |                       ^~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:501:89: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  501 |         if ((result = EAS_OpenFile(m_easData, m_currentFile->getLocator(), &handle)) != EAS_SUCCESS)
+      |                                                                                         ^~~~~~~~~~~
+      |                                                                                         EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:507:14: error: 'result' was not declared in this scope; did you mean 'reset'?
+  507 |         if ((result = EAS_Prepare(m_easData, handle)) != EAS_SUCCESS)
+      |              ^~~~~~
+      |              reset
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:507:35: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  507 |         if ((result = EAS_Prepare(m_easData, handle)) != EAS_SUCCESS)
+      |                                   ^~~~~~~~~
+      |                                   readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:507:46: error: 'handle' was not declared in this scope
+  507 |         if ((result = EAS_Prepare(m_easData, handle)) != EAS_SUCCESS)
+      |                                              ^~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:507:23: error: 'EAS_Prepare' was not declared in this scope
+  507 |         if ((result = EAS_Prepare(m_easData, handle)) != EAS_SUCCESS)
+      |                       ^~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:507:58: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  507 |         if ((result = EAS_Prepare(m_easData, handle)) != EAS_SUCCESS)
+      |                                                          ^~~~~~~~~~~
+      |                                                          EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:513:14: error: 'result' was not declared in this scope; did you mean 'reset'?
+  513 |         if ((result = EAS_ParseMetaData(m_easData, handle, &playTime)) != EAS_SUCCESS)
+      |              ^~~~~~
+      |              reset
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:513:41: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  513 |         if ((result = EAS_ParseMetaData(m_easData, handle, &playTime)) != EAS_SUCCESS)
+      |                                         ^~~~~~~~~
+      |                                         readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:513:52: error: 'handle' was not declared in this scope
+  513 |         if ((result = EAS_ParseMetaData(m_easData, handle, &playTime)) != EAS_SUCCESS)
+      |                                                    ^~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:513:61: error: 'playTime' was not declared in this scope; did you mean 'playFile'?
+  513 |         if ((result = EAS_ParseMetaData(m_easData, handle, &playTime)) != EAS_SUCCESS)
+      |                                                             ^~~~~~~~
+      |                                                             playFile
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:513:23: error: 'EAS_ParseMetaData' was not declared in this scope
+  513 |         if ((result = EAS_ParseMetaData(m_easData, handle, &playTime)) != EAS_SUCCESS)
+      |                       ^~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:513:75: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  513 |         if ((result = EAS_ParseMetaData(m_easData, handle, &playTime)) != EAS_SUCCESS)
+      |                                                                           ^~~~~~~~~~~
+      |                                                                           EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:522:9: error: 'm_fileHandle' was not declared in this scope
+  522 |         m_fileHandle = handle;
+      |         ^~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:522:24: error: 'handle' was not declared in this scope
+  522 |         m_fileHandle = handle;
+      |                        ^~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'bool SynthRenderer::isPlaybackCompleted()':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:530:5: error: 'EAS_RESULT' was not declared in this scope
+  530 |     EAS_RESULT result;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:531:5: error: 'EAS_STATE' was not declared in this scope
+  531 |     EAS_STATE state = EAS_STATE_EMPTY;
+      |     ^~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:532:9: error: 'm_fileHandle' was not declared in this scope
+  532 |     if (m_fileHandle != 0 && (result = EAS_State(m_easData, m_fileHandle, &state)) != EAS_SUCCESS)
+      |         ^~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:532:31: error: 'result' was not declared in this scope; did you mean 'reset'?
+  532 |     if (m_fileHandle != 0 && (result = EAS_State(m_easData, m_fileHandle, &state)) != EAS_SUCCESS)
+      |                               ^~~~~~
+      |                               reset
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:532:50: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  532 |     if (m_fileHandle != 0 && (result = EAS_State(m_easData, m_fileHandle, &state)) != EAS_SUCCESS)
+      |                                                  ^~~~~~~~~
+      |                                                  readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:532:76: error: 'state' was not declared in this scope; did you mean 'stat'?
+  532 |     if (m_fileHandle != 0 && (result = EAS_State(m_easData, m_fileHandle, &state)) != EAS_SUCCESS)
+      |                                                                            ^~~~~
+      |                                                                            stat
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:532:40: error: 'EAS_State' was not declared in this scope
+  532 |     if (m_fileHandle != 0 && (result = EAS_State(m_easData, m_fileHandle, &state)) != EAS_SUCCESS)
+      |                                        ^~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:532:87: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  532 |     if (m_fileHandle != 0 && (result = EAS_State(m_easData, m_fileHandle, &state)) != EAS_SUCCESS)
+      |                                                                                       ^~~~~~~~~~~
+      |                                                                                       EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:537:16: error: 'state' was not declared in this scope; did you mean 'stat'?
+  537 |     bool b = ((state == EAS_STATE_STOPPED) || (state == EAS_STATE_ERROR) || (state == EAS_STATE_EMPTY));
+      |                ^~~~~
+      |                stat
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:537:25: error: 'EAS_STATE_STOPPED' was not declared in this scope
+  537 |     bool b = ((state == EAS_STATE_STOPPED) || (state == EAS_STATE_ERROR) || (state == EAS_STATE_EMPTY));
+      |                         ^~~~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:537:57: error: 'EAS_STATE_ERROR' was not declared in this scope
+  537 |     bool b = ((state == EAS_STATE_STOPPED) || (state == EAS_STATE_ERROR) || (state == EAS_STATE_EMPTY));
+      |                                                         ^~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:537:87: error: 'EAS_STATE_EMPTY' was not declared in this scope
+  537 |     bool b = ((state == EAS_STATE_STOPPED) || (state == EAS_STATE_ERROR) || (state == EAS_STATE_EMPTY));
+      |                                                                                       ^~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'void SynthRenderer::closePlayback()':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:546:5: error: 'EAS_RESULT' was not declared in this scope
+  546 |     EAS_RESULT result = EAS_SUCCESS;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:548:9: error: 'm_fileHandle' was not declared in this scope
+  548 |     if (m_fileHandle != 0 && (result = EAS_CloseFile(m_easData, m_fileHandle)) != EAS_SUCCESS)
+      |         ^~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:548:31: error: 'result' was not declared in this scope; did you mean 'reset'?
+  548 |     if (m_fileHandle != 0 && (result = EAS_CloseFile(m_easData, m_fileHandle)) != EAS_SUCCESS)
+      |                               ^~~~~~
+      |                               reset
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:548:54: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  548 |     if (m_fileHandle != 0 && (result = EAS_CloseFile(m_easData, m_fileHandle)) != EAS_SUCCESS)
+      |                                                      ^~~~~~~~~
+      |                                                      readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:548:40: error: 'EAS_CloseFile' was not declared in this scope
+  548 |     if (m_fileHandle != 0 && (result = EAS_CloseFile(m_easData, m_fileHandle)) != EAS_SUCCESS)
+      |                                        ^~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:548:83: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  548 |     if (m_fileHandle != 0 && (result = EAS_CloseFile(m_easData, m_fileHandle)) != EAS_SUCCESS)
+      |                                                                                   ^~~~~~~~~~~
+      |                                                                                   EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:552:5: error: 'm_fileHandle' was not declared in this scope
+  552 |     m_fileHandle = nullptr;
+      |     ^~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:553:12: error: 'm_currentFile' was not declared in this scope
+  553 |     delete m_currentFile;
+      |            ^~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp: In member function 'int SynthRenderer::getPlaybackLocation()':
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:561:5: error: 'EAS_I32' was not declared in this scope
+  561 |     EAS_I32 playTime = 0;
+      |     ^~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:562:5: error: 'EAS_RESULT' was not declared in this scope
+  562 |     EAS_RESULT result = EAS_SUCCESS;
+      |     ^~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:564:10: error: 'result' was not declared in this scope; did you mean 'reset'?
+  564 |     if ((result = EAS_GetLocation(m_easData, m_fileHandle, &playTime)) != EAS_SUCCESS)
+      |          ^~~~~~
+      |          reset
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:564:35: error: 'm_easData' was not declared in this scope; did you mean 'readData'?
+  564 |     if ((result = EAS_GetLocation(m_easData, m_fileHandle, &playTime)) != EAS_SUCCESS)
+      |                                   ^~~~~~~~~
+      |                                   readData
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:564:46: error: 'm_fileHandle' was not declared in this scope
+  564 |     if ((result = EAS_GetLocation(m_easData, m_fileHandle, &playTime)) != EAS_SUCCESS)
+      |                                              ^~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:564:61: error: 'playTime' was not declared in this scope; did you mean 'playFile'?
+  564 |     if ((result = EAS_GetLocation(m_easData, m_fileHandle, &playTime)) != EAS_SUCCESS)
+      |                                                             ^~~~~~~~
+      |                                                             playFile
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:564:19: error: 'EAS_GetLocation' was not declared in this scope
+  564 |     if ((result = EAS_GetLocation(m_easData, m_fileHandle, &playTime)) != EAS_SUCCESS)
+      |                   ^~~~~~~~~~~~~~~
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:564:75: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  564 |     if ((result = EAS_GetLocation(m_easData, m_fileHandle, &playTime)) != EAS_SUCCESS)
+      |                                                                           ^~~~~~~~~~~
+      |                                                                           EXIT_SUCCESS
+D:/Desktop/multiplatform-sonivoxeas-devel/multiplatform-sonivoxeas/libsvoxeas/synthrenderer.cpp:569:12: error: 'playTime' was not declared in this scope; did you mean 'playFile'?
+  569 |     return playTime;
+      |            ^~~~~~~~
+      |            playFile
+ninja: build stopped: subcommand failed.
