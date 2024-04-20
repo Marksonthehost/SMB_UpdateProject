@@ -1,0 +1,415 @@
+[1/2] Building CXX object CMakeFiles/SonivoxTest.dir/test/SonivoxTest.cpp.obj
+FAILED: CMakeFiles/SonivoxTest.dir/test/SonivoxTest.cpp.obj 
+D:\msys64\mingw64\bin\c++.exe  -ID:/Desktop/sonivox-devel/build -ID:/Desktop/sonivox-devel/arm-wt-22k/include -ID:/Desktop/sonivox-devel/fakes -ID:/Desktop/sonivox-devel/arm-wt-22k/include/libsonivox -ID:/Desktop/sonivox-devel/build/libsonivox -isystem D:/Desktop/sonivox-devel/build/_deps/googletest-src/googletest/include -isystem D:/Desktop/sonivox-devel/build/_deps/googletest-src/googletest -std=gnu++14 -MD -MT CMakeFiles/SonivoxTest.dir/test/SonivoxTest.cpp.obj -MF CMakeFiles\SonivoxTest.dir\test\SonivoxTest.cpp.obj.d -o CMakeFiles/SonivoxTest.dir/test/SonivoxTest.cpp.obj -c D:/Desktop/sonivox-devel/test/SonivoxTest.cpp
+In file included from D:/Desktop/sonivox-devel/build/libsonivox/eas.h:38,
+                 from D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:25:
+D:/Desktop/sonivox-devel/arm-wt-22k/include/libsonivox/eas_types.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_types.h
+      | ^
+In file included from D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:26:
+D:/Desktop/sonivox-devel/arm-wt-22k/include/libsonivox/eas_reverb.h:1:1: error: expected unqualified-id before '.' token
+    1 | ../../host_src/eas_reverb.h
+      | ^
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:153:25: error: 'EAS_I32' has not been declared
+  153 |     bool seekToLocation(EAS_I32);
+      |                         ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:167:5: error: 'EAS_DATA_HANDLE' does not name a type
+  167 |     EAS_DATA_HANDLE mEASDataHandle;
+      |     ^~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:168:5: error: 'EAS_HANDLE' does not name a type
+  168 |     EAS_HANDLE mEASStreamHandle;
+      |     ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:169:5: error: 'EAS_FILE' does not name a type
+  169 |     EAS_FILE mEasFile;
+      |     ^~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:170:5: error: 'EAS_PCM' does not name a type
+  170 |     EAS_PCM *mPCMBuffer;
+      |     ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:171:5: error: 'EAS_PCM' does not name a type
+  171 |     EAS_PCM *mAudioBuffer;
+      |     ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:172:5: error: 'EAS_I32' does not name a type
+  172 |     EAS_I32 mPCMBufferSize;
+      |     ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:173:11: error: 'S_EAS_LIB_CONFIG' does not name a type
+  173 |     const S_EAS_LIB_CONFIG *mEASConfig;
+      |           ^~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp: In constructor 'SonivoxTest::SonivoxTest()':
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:46:13: error: class 'SonivoxTest' does not have any field named 'mEASDataHandle'
+   46 |           , mEASDataHandle(nullptr)
+      |             ^~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:47:13: error: class 'SonivoxTest' does not have any field named 'mEASStreamHandle'
+   47 |           , mEASStreamHandle(nullptr)
+      |             ^~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:48:13: error: class 'SonivoxTest' does not have any field named 'mPCMBuffer'
+   48 |           , mPCMBuffer(nullptr)
+      |             ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:49:13: error: class 'SonivoxTest' does not have any field named 'mAudioBuffer'
+   49 |           , mAudioBuffer(nullptr)
+      |             ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:50:13: error: class 'SonivoxTest' does not have any field named 'mEASConfig'
+   50 |           , mEASConfig(nullptr)
+      |             ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp: In destructor 'virtual SonivoxTest::~SonivoxTest()':
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:59:15: error: 'mPCMBuffer' was not declared in this scope
+   59 |           if (mPCMBuffer) {
+      |               ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:60:15: error: type '<type error>' argument given to 'delete', expected pointer
+   60 |               delete[] mPCMBuffer;
+      |               ^~~~~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:63:15: error: 'mAudioBuffer' was not declared in this scope
+   63 |           if (mAudioBuffer) {
+      |               ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:64:15: error: type '<type error>' argument given to 'delete', expected pointer
+   64 |               delete[] mAudioBuffer;
+      |               ^~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp: In member function 'virtual void SonivoxTest::SetUp()':
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:88:11: error: 'mEasFile' was not declared in this scope
+   88 |           mEasFile.handle = this;
+      |           ^~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:92:11: error: 'EAS_RESULT' was not declared in this scope
+   92 |           EAS_RESULT result = EAS_Init(&mEASDataHandle);
+      |           ^~~~~~~~~~
+In file included from D:/Desktop/sonivox-devel/build/_deps/googletest-src/googletest/include/gtest/gtest.h:67,
+                 from D:/Desktop/sonivox-devel/test/SonivoxTestEnvironment.h:20,
+                 from D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:28:
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:93:21: error: 'result' was not declared in this scope
+   93 |           ASSERT_EQ(result, EAS_SUCCESS) << "Failed to initialize synthesizer library";
+      |                     ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:93:29: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+   93 |           ASSERT_EQ(result, EAS_SUCCESS) << "Failed to initialize synthesizer library";
+      |                             ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:95:21: error: 'mEASDataHandle' was not declared in this scope
+   95 |           ASSERT_NE(mEASDataHandle, nullptr) << "Failed to initialize EAS data handle";
+      |                     ^~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:97:11: error: 'result' was not declared in this scope
+   97 |           result = EAS_OpenFile(mEASDataHandle, &mEasFile, &mEASStreamHandle);
+      |           ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:97:33: error: 'mEASDataHandle' was not declared in this scope
+   97 |           result = EAS_OpenFile(mEASDataHandle, &mEasFile, &mEASStreamHandle);
+      |                                 ^~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:97:61: error: 'mEASStreamHandle' was not declared in this scope
+   97 |           result = EAS_OpenFile(mEASDataHandle, &mEasFile, &mEASStreamHandle);
+      |                                                             ^~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:97:20: error: 'EAS_OpenFile' was not declared in this scope
+   97 |           result = EAS_OpenFile(mEASDataHandle, &mEasFile, &mEASStreamHandle);
+      |                    ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:98:29: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+   98 |           ASSERT_EQ(result, EAS_SUCCESS) << "Failed to open file";
+      |                             ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:102:20: error: 'EAS_Prepare' was not declared in this scope
+  102 |           result = EAS_Prepare(mEASDataHandle, mEASStreamHandle);
+      |                    ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:103:29: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  103 |           ASSERT_EQ(result, EAS_SUCCESS) << "Failed to prepare EAS data and stream handles";
+      |                             ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:105:11: error: 'EAS_I32' was not declared in this scope
+  105 |           EAS_I32 playTimeMs;
+      |           ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:106:73: error: 'playTimeMs' was not declared in this scope
+  106 |           result = EAS_ParseMetaData(mEASDataHandle, mEASStreamHandle, &playTimeMs);
+      |                                                                         ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:106:20: error: 'EAS_ParseMetaData' was not declared in this scope
+  106 |           result = EAS_ParseMetaData(mEASDataHandle, mEASStreamHandle, &playTimeMs);
+      |                    ^~~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:107:29: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  107 |           ASSERT_EQ(result, EAS_SUCCESS) << "Failed to parse meta data";
+      |                             ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:112:19: error: expected ';' before 'locationMs'
+  112 |           EAS_I32 locationMs = -1;
+      |                   ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:114:71: error: 'locationMs' was not declared in this scope
+  114 |           result = EAS_GetLocation(mEASDataHandle, mEASStreamHandle, &locationMs);
+      |                                                                       ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:114:20: error: 'EAS_GetLocation' was not declared in this scope
+  114 |           result = EAS_GetLocation(mEASDataHandle, mEASStreamHandle, &locationMs);
+      |                    ^~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:115:29: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  115 |           ASSERT_EQ(result, EAS_SUCCESS) << "Failed to get the location after parsing meta data";
+      |                             ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:119:11: error: 'mEASConfig' was not declared in this scope
+  119 |           mEASConfig = EAS_Config();
+      |           ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:119:24: error: 'EAS_Config' was not declared in this scope
+  119 |           mEASConfig = EAS_Config();
+      |                        ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:126:11: error: 'mPCMBufferSize' was not declared in this scope
+  126 |           mPCMBufferSize = sizeof(EAS_PCM) * mEASConfig->mixBufferSize * mEASConfig->numChannels
+      |           ^~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:126:35: error: 'EAS_PCM' was not declared in this scope
+  126 |           mPCMBufferSize = sizeof(EAS_PCM) * mEASConfig->mixBufferSize * mEASConfig->numChannels
+      |                                   ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:129:11: error: 'mPCMBuffer' was not declared in this scope
+  129 |           mPCMBuffer = new (std::nothrow) EAS_PCM[mPCMBufferSize];
+      |           ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:129:43: error: 'EAS_PCM' does not name a type
+  129 |           mPCMBuffer = new (std::nothrow) EAS_PCM[mPCMBufferSize];
+      |                                           ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:133:11: error: 'mAudioBuffer' was not declared in this scope
+  133 |           mAudioBuffer = new (std::nothrow)
+      |           ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:134:15: error: 'EAS_PCM' does not name a type
+  134 |               EAS_PCM[mEASConfig->mixBufferSize * mEASConfig->numChannels];
+      |               ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp: In member function 'virtual void SonivoxTest::TearDown()':
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:141:11: error: 'EAS_RESULT' was not declared in this scope
+  141 |           EAS_RESULT result;
+      |           ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:142:15: error: 'mEASDataHandle' was not declared in this scope
+  142 |           if (mEASDataHandle) {
+      |               ^~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:143:19: error: 'mEASStreamHandle' was not declared in this scope
+  143 |               if (mEASStreamHandle) {
+      |                   ^~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:144:19: error: 'result' was not declared in this scope
+  144 |                   result = EAS_CloseFile(mEASDataHandle, mEASStreamHandle);
+      |                   ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:144:28: error: 'EAS_CloseFile' was not declared in this scope
+  144 |                   result = EAS_CloseFile(mEASDataHandle, mEASStreamHandle);
+      |                            ^~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:145:37: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  145 |                   ASSERT_EQ(result, EAS_SUCCESS) << "Failed to close audio file/stream";
+      |                                     ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:147:15: error: 'result' was not declared in this scope
+  147 |               result = EAS_Shutdown(mEASDataHandle);
+      |               ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:147:24: error: 'EAS_Shutdown' was not declared in this scope
+  147 |               result = EAS_Shutdown(mEASDataHandle);
+      |                        ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:148:33: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  148 |               ASSERT_EQ(result, EAS_SUCCESS)
+      |                                 ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp: At global scope:
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:198:6: error: 'bool SonivoxTest::seekToLocation' is not a static data member of 'class SonivoxTest'
+  198 | bool SonivoxTest::seekToLocation(EAS_I32 locationExpectedMs) {
+      |      ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:198:34: error: 'EAS_I32' was not declared in this scope
+  198 | bool SonivoxTest::seekToLocation(EAS_I32 locationExpectedMs) {
+      |                                  ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp: In member function 'bool SonivoxTest::renderAudio()':
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:213:5: error: 'EAS_I32' was not declared in this scope
+  213 |     EAS_I32 count = -1;
+      |     ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:214:5: error: 'EAS_PCM' was not declared in this scope
+  214 |     EAS_PCM *pcm = mAudioBuffer;
+      |     ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:214:14: error: 'pcm' was not declared in this scope
+  214 |     EAS_PCM *pcm = mAudioBuffer;
+      |              ^~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:214:20: error: 'mAudioBuffer' was not declared in this scope
+  214 |     EAS_PCM *pcm = mAudioBuffer;
+      |                    ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:216:5: error: 'EAS_RESULT' was not declared in this scope
+  216 |     EAS_RESULT result = EAS_Render(mEASDataHandle, pcm, mEASConfig->mixBufferSize, &count);
+      |     ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:217:9: error: 'result' was not declared in this scope
+  217 |     if (result != EAS_SUCCESS) {
+      |         ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:217:19: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  217 |     if (result != EAS_SUCCESS) {
+      |                   ^~~~~~~~~~~
+      |                   EXIT_SUCCESS
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:221:9: error: 'count' was not declared in this scope
+  221 |     if (count != mEASConfig->mixBufferSize) {
+      |         ^~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:221:18: error: 'mEASConfig' was not declared in this scope
+  221 |     if (count != mEASConfig->mixBufferSize) {
+      |                  ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp: In member function 'virtual void SonivoxTest_DecodeTest_Test::TestBody()':
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:230:5: error: 'EAS_I32' was not declared in this scope
+  230 |     EAS_I32 totalChannels = mEASConfig->numChannels;
+      |     ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:231:15: error: 'totalChannels' was not declared in this scope; did you mean 'mTotalAudioChannels'?
+  231 |     ASSERT_EQ(totalChannels, mTotalAudioChannels)
+      |               ^~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:234:12: error: expected ';' before 'sampleRate'
+  234 |     EAS_I32 sampleRate = mEASConfig->sampleRate;
+      |            ^~~~~~~~~~~
+      |            ;
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:235:15: error: 'sampleRate' was not declared in this scope
+  235 |     ASSERT_EQ(sampleRate, mAudioSampleRate)
+      |               ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:240:5: error: 'EAS_RESULT' was not declared in this scope
+  240 |     EAS_RESULT result = EAS_SetParameter(mEASDataHandle, EAS_MODULE_REVERB, EAS_PARAM_REVERB_PRESET,
+      |     ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:242:15: error: 'result' was not declared in this scope
+  242 |     ASSERT_EQ(result, EAS_SUCCESS)
+      |               ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:242:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  242 |     ASSERT_EQ(result, EAS_SUCCESS)
+      |                       ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:245:5: error: 'result' was not declared in this scope
+  245 |     result =
+      |     ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:246:30: error: 'mEASDataHandle' was not declared in this scope
+  246 |             EAS_SetParameter(mEASDataHandle, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, EAS_FALSE);
+      |                              ^~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:246:46: error: 'EAS_MODULE_REVERB' was not declared in this scope
+  246 |             EAS_SetParameter(mEASDataHandle, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, EAS_FALSE);
+      |                                              ^~~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:246:65: error: 'EAS_PARAM_REVERB_BYPASS' was not declared in this scope
+  246 |             EAS_SetParameter(mEASDataHandle, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, EAS_FALSE);
+      |                                                                 ^~~~~~~~~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:246:90: error: 'EAS_FALSE' was not declared in this scope
+  246 |             EAS_SetParameter(mEASDataHandle, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, EAS_FALSE);
+      |                                                                                          ^~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:246:13: error: 'EAS_SetParameter' was not declared in this scope
+  246 |             EAS_SetParameter(mEASDataHandle, EAS_MODULE_REVERB, EAS_PARAM_REVERB_BYPASS, EAS_FALSE);
+      |             ^~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:247:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  247 |     ASSERT_EQ(result, EAS_SUCCESS)
+      |                       ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:250:12: error: expected ';' before 'count'
+  250 |     EAS_I32 count;
+      |            ^~~~~~
+      |            ;
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:251:5: error: 'EAS_STATE' was not declared in this scope
+  251 |     EAS_STATE state;
+      |     ^~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:257:9: error: 'EAS_PCM' was not declared in this scope
+  257 |         EAS_PCM *pcm = mPCMBuffer;
+      |         ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:257:18: error: 'pcm' was not declared in this scope
+  257 |         EAS_PCM *pcm = mPCMBuffer;
+      |                  ^~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:257:24: error: 'mPCMBuffer' was not declared in this scope
+  257 |         EAS_PCM *pcm = mPCMBuffer;
+      |                        ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:259:44: error: 'mEASStreamHandle' was not declared in this scope
+  259 |         result = EAS_State(mEASDataHandle, mEASStreamHandle, &state);
+      |                                            ^~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:259:63: error: 'state' was not declared in this scope; did you mean 'stat'?
+  259 |         result = EAS_State(mEASDataHandle, mEASStreamHandle, &state);
+      |                                                               ^~~~~
+      |                                                               stat
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:259:18: error: 'EAS_State' was not declared in this scope
+  259 |         result = EAS_State(mEASDataHandle, mEASStreamHandle, &state);
+      |                  ^~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:260:27: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  260 |         ASSERT_EQ(result, EAS_SUCCESS) << "Failed to get EAS State";
+      |                           ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:262:26: error: 'EAS_STATE_ERROR' was not declared in this scope
+  262 |         ASSERT_NE(state, EAS_STATE_ERROR) << "Error state found";
+      |                          ^~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:265:22: error: 'EAS_STATE_STOPPED' was not declared in this scope
+  265 |         if (state == EAS_STATE_STOPPED) {
+      |                      ^~~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:269:16: error: expected ';' before 'locationMs'
+  269 |         EAS_I32 locationMs;
+      |                ^~~~~~~~~~~
+      |                ;
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:270:69: error: 'locationMs' was not declared in this scope
+  270 |         result = EAS_GetLocation(mEASDataHandle, mEASStreamHandle, &locationMs);
+      |                                                                     ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:270:18: error: 'EAS_GetLocation' was not declared in this scope
+  270 |         result = EAS_GetLocation(mEASDataHandle, mEASStreamHandle, &locationMs);
+      |                  ^~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:271:27: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  271 |         ASSERT_EQ(result, EAS_SUCCESS) << "Failed to get the current location in ms";
+      |                           ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:274:30: error: 'EAS_STATE_STOPPED' was not declared in this scope
+  274 |             ASSERT_NE(state, EAS_STATE_STOPPED)
+      |                              ^~~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:281:54: error: 'mEASConfig' was not declared in this scope
+  281 |             result = EAS_Render(mEASDataHandle, pcm, mEASConfig->mixBufferSize, &count);
+      |                                                      ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:281:82: error: 'count' was not declared in this scope
+  281 |             result = EAS_Render(mEASDataHandle, pcm, mEASConfig->mixBufferSize, &count);
+      |                                                                                  ^~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:281:22: error: 'EAS_Render' was not declared in this scope
+  281 |             result = EAS_Render(mEASDataHandle, pcm, mEASConfig->mixBufferSize, &count);
+      |                      ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:282:31: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  282 |             ASSERT_EQ(result, EAS_SUCCESS) << "Failed to render the audio data";
+      |                               ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp: In member function 'virtual void SonivoxTest_DecodePauseResumeTest_Test::TestBody()':
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:310:5: error: 'EAS_I32' was not declared in this scope
+  310 |     EAS_I32 seekPosition = mAudioplayTimeMs / 2;
+      |     ^~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:312:5: error: 'EAS_RESULT' was not declared in this scope
+  312 |     EAS_RESULT result = EAS_Locate(mEASDataHandle, mEASStreamHandle, seekPosition, false);
+      |     ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:313:15: error: 'result' was not declared in this scope
+  313 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to locate to location(ms): " << seekPosition;
+      |               ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:313:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  313 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to locate to location(ms): " << seekPosition;
+      |                       ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:313:79: error: 'seekPosition' was not declared in this scope; did you mean 'seekToLocation'?
+  313 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to locate to location(ms): " << seekPosition;
+      |                                                                               ^~~~~~~~~~~~
+      |                                                                               seekToLocation
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:318:5: error: 'result' was not declared in this scope
+  318 |     result = EAS_Pause(mEASDataHandle, mEASStreamHandle);
+      |     ^~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:318:24: error: 'mEASDataHandle' was not declared in this scope
+  318 |     result = EAS_Pause(mEASDataHandle, mEASStreamHandle);
+      |                        ^~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:318:40: error: 'mEASStreamHandle' was not declared in this scope
+  318 |     result = EAS_Pause(mEASDataHandle, mEASStreamHandle);
+      |                                        ^~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:318:14: error: 'EAS_Pause' was not declared in this scope
+  318 |     result = EAS_Pause(mEASDataHandle, mEASStreamHandle);
+      |              ^~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:319:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  319 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to pause";
+      |                       ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:326:12: error: expected ';' before 'currentPosMs'
+  326 |     EAS_I32 currentPosMs = -1;
+      |            ^~~~~~~~~~~~~
+      |            ;
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:327:65: error: 'currentPosMs' was not declared in this scope
+  327 |     result = EAS_GetLocation(mEASDataHandle, mEASStreamHandle, &currentPosMs);
+      |                                                                 ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:327:14: error: 'EAS_GetLocation' was not declared in this scope
+  327 |     result = EAS_GetLocation(mEASDataHandle, mEASStreamHandle, &currentPosMs);
+      |              ^~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:328:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  328 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to get current location";
+      |                       ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:330:29: error: 'seekPosition' was not declared in this scope; did you mean 'seekToLocation'?
+  330 |     ASSERT_EQ(currentPosMs, seekPosition) << "Must not move the audio position after pause";
+      |                             ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:332:5: error: 'EAS_STATE' was not declared in this scope
+  332 |     EAS_STATE state;
+      |     ^~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:333:59: error: 'state' was not declared in this scope; did you mean 'stat'?
+  333 |     result = EAS_State(mEASDataHandle, mEASStreamHandle, &state);
+      |                                                           ^~~~~
+      |                                                           stat
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:333:14: error: 'EAS_State' was not declared in this scope
+  333 |     result = EAS_State(mEASDataHandle, mEASStreamHandle, &state);
+      |              ^~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:334:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  334 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to get EAS state";
+      |                       ^~~~~~~~~~~
+In file included from D:/Desktop/sonivox-devel/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h:114,
+                 from D:/Desktop/sonivox-devel/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h:48,
+                 from D:/Desktop/sonivox-devel/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:46,
+                 from D:/Desktop/sonivox-devel/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h:43,
+                 from D:/Desktop/sonivox-devel/build/_deps/googletest-src/googletest/include/gtest/gtest.h:60:
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:336:26: error: 'EAS_STATE_PAUSING' was not declared in this scope
+  336 |     ASSERT_TRUE(state == EAS_STATE_PAUSING || state == EAS_STATE_PAUSED) << "Invalid state reached when paused";
+      |                          ^~~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:336:56: error: 'EAS_STATE_PAUSED' was not declared in this scope
+  336 |     ASSERT_TRUE(state == EAS_STATE_PAUSING || state == EAS_STATE_PAUSED) << "Invalid state reached when paused";
+      |                                                        ^~~~~~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:338:14: error: 'EAS_Resume' was not declared in this scope
+  338 |     result = EAS_Resume(mEASDataHandle, mEASStreamHandle);
+      |              ^~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:339:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  339 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to resume";
+      |                       ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:346:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  346 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to get current location";
+      |                       ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:348:29: error: 'seekPosition' was not declared in this scope; did you mean 'seekToLocation'?
+  348 |     ASSERT_GT(currentPosMs, seekPosition) << "Invalid position after resuming";
+      |                             ^~~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:351:23: error: 'EAS_SUCCESS' was not declared in this scope; did you mean 'EXIT_SUCCESS'?
+  351 |     ASSERT_EQ(result, EAS_SUCCESS) << "Failed to get EAS state";
+      |                       ^~~~~~~~~~~
+D:/Desktop/sonivox-devel/test/SonivoxTest.cpp:353:22: error: 'EAS_STATE_PLAY' was not declared in this scope
+  353 |     ASSERT_EQ(state, EAS_STATE_PLAY) << "Invalid state reached when resumed";
+      |                      ^~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
